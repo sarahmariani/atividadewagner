@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hmmm</title>
+</head>
+<body>
+    <script>
+        function presunto(){
+            resultado.value = parseInt(cadela1.value) + parseInt(cadela2.value);
+        }
+        function multiplicar(){
+            resultado.value = parseInt(cadela1.value) * parseInt(cadela2.value);
+        }
+        function dividir(){
+        if(cadela1.value == 0){
+            alert("Erro, não divida por zero!");
+        }else{
+            resultado.value = parseFloat(cadela1.value) / parseFloat(cadela2.value);
+        }
+    }
+    </script>
+    <h1>Soma de Valores bb</h1>
+    Valor 1: <input type="text" id="cadela1" value="0"><br>
+    Valor 2: <input type="text" id="cadela2" value="0"><br> 
+    <input type="button" value="Somar" onclick="presunto()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="dividir" onclick="dividir()">
+
+    Resultado: <input type="text" value="0" id="resultado">
+</body>
+</html>
